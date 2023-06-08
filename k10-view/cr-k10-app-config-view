@@ -36,3 +36,10 @@ rules:
   verbs:
   - get
   - list
+- apiGroups:
+  - dist.kio.kasten.io
+  resources:
+  - '*'
+  verbs:
+  - get
+  - list
