@@ -38,6 +38,7 @@ rules:
   - list
 - apiGroups:
   - dist.kio.kasten.io
+  - config.kio.kasten.io
   resources:
   - '*'
   verbs:
