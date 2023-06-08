@@ -1,0 +1,13 @@
+apiVersion: rbac.authorization.k8s.io/v1
+kind: RoleBinding
+metadata:
+  name: rb-k10-app-config-view
+  namespace: kasten-io-mc
+roleRef:
+  apiGroup: rbac.authorization.k8s.io
+  kind: ClusterRole
+  name: cr-k10-app-config-view
+subjects:
+- apiGroup: rbac.authorization.k8s.io
+  kind: Group
+  name: ve20-k8s-2-my-blog
