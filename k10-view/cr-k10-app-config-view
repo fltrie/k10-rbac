@@ -1,0 +1,38 @@
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRole
+metadata:
+  name: cr-k10-app-config-view
+rules:
+- apiGroups:
+  - config.kio.kasten.io
+  resources:
+  - profiles
+  verbs:
+  - get
+  - list
+- apiGroups:
+  - config.kio.kasten.io
+  resources:
+  - policypresets
+  - transformsets
+  verbs:
+  - '*'
+- apiGroups:
+  - reporting.kio.kasten.io
+  - repositories.kio.kasten.io
+  resources:
+  - '*'
+  verbs:
+  - '*'
+- apiGroups:
+  - apps.kio.kasten.io
+  resources:
+  - applications
+  - applications/details
+  - restorepointcontents
+  - restorepointcontents/details
+  - restorepoints
+  - restorepoints/details
+  verbs:
+  - get
+  - list
