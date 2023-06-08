@@ -25,18 +25,6 @@ rules:
   verbs:
   - '*'
 - apiGroups:
-  - apps.kio.kasten.io
-  resources:
-  - applications
-  - applications/details
-  - restorepointcontents
-  - restorepointcontents/details
-  - restorepoints
-  - restorepoints/details
-  verbs:
-  - get
-  - list
-- apiGroups:
   - dist.kio.kasten.io
   - config.kio.kasten.io
   resources:
