@@ -1,0 +1,13 @@
+apiVersion: auth.kio.kasten.io/v1alpha1
+kind: K10ClusterRoleBinding
+metadata:
+  name: k10-crb-ve20-k8s-2-my-blog
+  namespace: kasten-io-mc
+spec:
+  clusters:
+  - name: k10-ve20-k8s-2.k8s-2-lab.internal
+  k10ClusterRole: k10-cr-ve20-k8s-2-my-blog
+  subjects:
+  - apiGroup: rbac.authorization.k8s.io
+    kind: Group
+    name: ve20-k8s-2-my-blog
