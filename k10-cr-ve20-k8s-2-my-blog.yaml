@@ -1,0 +1,8 @@
+apiVersion: auth.kio.kasten.io/v1alpha1
+kind: K10ClusterRole
+metadata:
+  name: k10-cr-ve20-k8s-2-my-blog
+  namespace: kasten-io-mc
+spec:
+  clusterRole: cr-ve20-k8s-2-my-blog
+  group: ve20-k8s-2-my-blog
